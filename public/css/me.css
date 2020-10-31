@@ -1,4 +1,12 @@
-/* padding */
+/* container */
+
+.userbox-container {
+    width: 40em !important;
+    margin: auto !important;
+}
+
+
+/* padding-tb */
 
 .m-padded-tb-mini {
     padding-top: .2em !important;
