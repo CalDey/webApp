@@ -10,10 +10,10 @@
 </head>
 <body>
     {{-- 导航栏 --}}
-    <nav class="ui inverted blue attached segment">
+    <nav class="ui inverted blue attached segment m-padded-tb-small">
         <div class="ui container">
             <div class="ui inverted huge secondary menu">
-                <a href="/">
+                <a href="{{route('home')}}">
                     <h2 class="ui header item">微新闻</h2>
                 </a>
                 <div class="right menu">

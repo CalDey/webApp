@@ -4,8 +4,7 @@
     <div class="m-padded-tb-huge">
         <div class="ui container">
             <div class="ui segment">
-                <h3>test123</h3>
-                <p>test123test123test123test123test123</p>
+                <h1>注册</h1>
             </div>
         </div>
     </div>
