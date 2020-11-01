@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title','主页')
+@section('title','注册')
 @section('content')
     <div class="m-padded-tb-huge">
         <div class="ui segments m-container-small">
@@ -7,7 +7,8 @@
                 <h2 class="ui header">注册</h2>
             </div>
             <div class="ui blue segment">
-                <form action="" class="ui form">
+            <form method="POST" action="{{route('users.store')}}" class="ui form">
+                {{csrf_field()}}
                         <div class="field">
                             <label for="name">用户名：</label>
                             <div class="ui left icon input">
@@ -36,7 +37,7 @@
                                 <input type="text" name="password_confirmation" value="{{old('password_confirmation')}}">
                             </div>
                         </div>
-                        <div class="ui fluid large blue submit button">注册</div>
+                        <button class="ui fluid large blue submit button" type="submit" >注册</button>
                 </form>
             </div>
         </div>
