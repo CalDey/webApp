@@ -18,7 +18,7 @@
                 </a>
                 <div class="right menu">
                     <a href="" class="m-item right aligned item m-item-hide">帮助</a>
-                    <a href="" class="m-item right aligned item m-item-hide">注册</a>
+                <a href="{{route('signup')}}" class="m-item right aligned item m-item-hide">注册</a>
                     <a href="" class="m-item right aligned active item m-item-hide">登录</a>
                 </div>
             </div>
