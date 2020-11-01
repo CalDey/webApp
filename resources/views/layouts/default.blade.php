@@ -25,6 +25,7 @@
         </div>
     </nav>
 
+    @include('shared._messages')
     @yield('content')
 
     {{-- 底部 --}}

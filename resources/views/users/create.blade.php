@@ -7,6 +7,7 @@
                 <h2 class="ui header">注册</h2>
             </div>
             <div class="ui blue segment">
+            @include('shared._errors')
             <form method="POST" action="{{route('users.store')}}" class="ui form">
                 {{csrf_field()}}
                         <div class="field">
