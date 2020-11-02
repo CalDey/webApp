@@ -25,8 +25,10 @@
         </div>
     </nav>
 
-    @include('shared._messages')
-    @yield('content')
+    <div class="ui container m-padded-tb-big">
+        @include('shared._messages')
+        @yield('content')
+    </div>
 
     {{-- 底部 --}}
     <footer class="ui inverted blue vertical segment">
