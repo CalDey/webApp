@@ -17,11 +17,19 @@
                                 <input type="text" name="email" value="{{old('email')}}">
                             </div>
                         </div>
+
                         <div class="field">
                             <label for="password">密码：</label>
                             <div class="ui left icon input">
                                 <i class="lock icon"></i>
                                 <input type="text" name="password" value="{{old('password')}}">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="remember" id="usercheck">
+                                <label for="usercheck">记住我</label>
                             </div>
                         </div>
                         <button class="ui fluid large blue submit button" type="submit" >登录</button>
