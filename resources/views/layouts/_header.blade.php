@@ -13,7 +13,9 @@
 
                     <div class="item">
                         <div class="ui floating dropdown">
-                            <img src="{{Auth::user()->gravatar('140')}}" alt="" class="ui avatar image">
+                            {{-- <img src="{{Auth::user()->gravatar('140')}}" alt="" class="ui avatar image">
+                                {{Auth::user()->name}} --}}
+                            <img src="{{Auth::user()->avatar}}" alt="" class="ui avatar image">
                                 {{Auth::user()->name}}
                             <i class="dropdown icon"></i>
                             <div class="menu">

@@ -1,6 +1,7 @@
 <div class="ui card">
     <div class="image">
-      <img src="{{$user->gravatar('200')}}">
+      {{-- <img src="{{$user->gravatar('200')}}"> --}}
+        <img src="{{$user->avatar}}" alt="{{$user->name}}">
     </div>
     <div class="content">
       <h2 class="header">个人简介</h2>
