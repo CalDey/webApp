@@ -28,7 +28,7 @@
                             <i class="dropdown icon"></i>
                             <div class="menu">
                                 <a href="{{route('users.show',Auth::user())}}" class="item">个人中心</a>
-                                <a href="#" class="item">编辑资料</a>
+                                <a href="{{route('users.edit',Auth::user())}}" class="item">编辑资料</a>
                                 <div class="divider"></div>
                                 <a class="item exit-button">
                                 <form action="{{route('logout')}}" method="POST">

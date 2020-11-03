@@ -49,3 +49,7 @@
 .exit-button {
     text-align: center !important;
 }
+
+.gravatar {
+    border-radius: 50%;
+}
