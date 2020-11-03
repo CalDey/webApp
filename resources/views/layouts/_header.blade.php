@@ -1,5 +1,5 @@
     {{-- 导航栏 --}}
-    <nav class="ui inverted blue attached segment m-padded-tb-small">
+    <nav class="ui inverted attached segment m-padded-tb-small">
         <div class="ui container">
             <div class="ui inverted huge secondary menu">
                 <a href="{{route('home')}}">

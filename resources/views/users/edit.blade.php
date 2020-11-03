@@ -9,14 +9,8 @@
             <div class="ui blue segment">
             @include('shared._errors')
 
-            <div class="field" style="text-align: center">
-                <a href="http://gravatar.com/emails" target="_blank">
-                <img src="{{$user->gravatar('200')}}" alt="{{$user->name}}" class="gravatar">
-                </a>
-            </div>
-
             <form method="POST" action="{{route('users.update',$user->id)}}" class="ui form">
-                {{method_field('PATCH')}}
+                {{method_field('PUT')}}
                 {{csrf_field()}}
                         <div class="field">
                             <label for="name">用户名：</label>
@@ -32,7 +26,7 @@
                                 <input type="text" name="email" value="{{$user->email}}" disabled>
                             </div>
                         </div>
-                        <div class="field">
+                        {{-- <div class="field">
                             <label for="password">密码：</label>
                             <div class="ui left icon input">
                                 <i class="lock icon"></i>
@@ -45,6 +39,10 @@
                                 <i class="lock icon"></i>
                                 <input type="text" name="password_confirmation" value="{{old('password_confirmation')}}">
                             </div>
+                        </div> --}}
+                        <div class="field">
+                            <label for="introduction-field">个人简介</label>
+                        <textarea name="introduction" id="introduction-field" rows="3" style="resize: none">{{old('introduction',$user->introduction)}}</textarea>
                         </div>
                         <button class="ui fluid large blue submit button" type="submit" >更新</button>
                 </form>
