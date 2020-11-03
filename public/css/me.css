@@ -1,3 +1,9 @@
+html {
+    position: relative !important;
+    min-height: 100%;
+}
+
+
 /* container */
 
 .m-container-small {
@@ -52,4 +58,17 @@
 
 .gravatar {
     border-radius: 50%;
+}
+
+.img-box {
+    padding: 0 !important;
+}
+
+.footer {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #000;
 }
