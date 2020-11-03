@@ -9,7 +9,7 @@
             <div class="ui blue segment">
             @include('shared._errors')
 
-            <form method="POST" action="{{route('users.update',$user->id)}}" class="ui form">
+            <form method="POST" action="{{route('users.update',$user->id)}}" class="ui form" enctype="multipart/form-data">
                 {{method_field('PUT')}}
                 {{csrf_field()}}
                         <div class="field">
@@ -43,6 +43,10 @@
                         <div class="field">
                             <label for="introduction-field">个人简介</label>
                         <textarea name="introduction" id="introduction-field" rows="3" style="resize: none">{{old('introduction',$user->introduction)}}</textarea>
+                        </div>
+                        <div class="field">
+                            <label for="">用户头像</label>
+                            <input type="file" name="avatar" style="border:0px;">
                         </div>
                         <button class="ui fluid large blue submit button" type="submit" >更新</button>
                 </form>

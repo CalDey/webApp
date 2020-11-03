@@ -65,10 +65,10 @@ html {
 }
 
 .footer {
-    position: absolute !important;
-    bottom: 0;
+    position: fixed !important;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #000;
+    height: 50px;
+    z-index: 9999;
 }
