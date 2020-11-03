@@ -4,10 +4,10 @@
     </div>
     <div class="content">
       <h2 class="header">个人简介</h2>
-      <div class="description">网站创始人，超级管理员</div>
+      <div class="description">{{$user->introduction}}</div>
     </div>
     <div class="extra content">
-      <i class="user icon"></i> 22 个好友
+      <i class="book icon"></i> 30 篇文章
     </div>
   </div>
 
