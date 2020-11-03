@@ -4,11 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Auth;
 use App\Http\Requests\UserRequest;
 use App\Handlers\ImageUploadHandler;
 
 class UsersController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth',['except' => ['shows']]);
+    }
+
     public function create()
     {
         return view('users.create');
@@ -41,6 +48,7 @@ class UsersController extends Controller
 
     public function edit(User $user)
     {
+        $this->authorize('update', $user);
         return view('users.edit',compact('user'));
     }
 
@@ -48,6 +56,7 @@ class UsersController extends Controller
     {
         // dd($request->avatar);
         // $user->update($request->all());
+        $this->authorize('update', $user);
         $data = $request->all();
 
         if ($request->avatar) {

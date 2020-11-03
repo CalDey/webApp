@@ -19,9 +19,9 @@
         {{-- 内容栏 --}}
         <div class="twelve wide column">
             <div class="ui segment">
-                <h1>{{$user->name}}&nbsp;&nbsp;<small>{{$user->email}}</small></h1>
+                <h1>{{$user->name}}&nbsp;&nbsp;&nbsp;&nbsp;<small>{{$user->email}}</small></h1>
             </div>
-            <hr>
+            <div class="ui divider"></div>
             <div class="ui segment">
                 暂无数据
             </div>

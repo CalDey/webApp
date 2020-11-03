@@ -39,9 +39,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function gravatar($size = '100')
+    public function getAvatarAttribute($value)
     {
-        // $hash = md5(strtolower(trim($this->attributes['email'])));
-        return "https://cdn.learnku.com/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600";
+        if(empty($value)){
+            return "https://cdn.learnku.com/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600";
+        }
+        return $value;
     }
 }
